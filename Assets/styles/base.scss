@@ -1,0 +1,167 @@
+// 引入全局变量
+@import 'variables';
+
+// 设置全局样式
+body {
+    // width: var(--body-width);
+    // height: var(--body-height);
+    // min-height: var(--body-height);
+    background-color: var(--bg-color);
+    margin-top: 0;
+
+    font-family: 'LXGW WenKai Screen';
+    color: var(--text-color);
+}
+
+// 设置header
+header {
+    margin-top: 6rem;
+
+}
+
+// 设置主要容器
+main {
+    display: block;
+    max-width: var(--container-max-width);
+    height: var(--container-height);
+    margin: 1rem auto;
+    // background-color: rgba(0, 0, 0, 0.1);
+    // position: relative;
+    // top: calc(100vh * 0.2); 
+}
+
+.Author {
+    display: flex;
+}
+
+// 头像
+#avatar {
+    width: $avatar-size;
+    height: $avatar-size;
+    border: 1px solid #ccc;
+    border-radius: $avatar-radius;
+    overflow: hidden;
+    // 调整头像位置
+    position: relative;
+    top: 1px;    
+}
+
+#avatar img {
+    width: 6rem;
+    height: 6rem;
+    background: $avatar-bg;
+    box-shadow:  $avatar-shadow;
+}
+
+#avatar-weight {
+    position: relative;
+    left: 10px;
+}
+
+#greeting p {
+    margin-top: 25px;
+    margin-bottom: 14px;
+    position: relative;
+    top: 5px;
+    font-size: 1.875rem;
+    font-weight: 700;
+}
+
+#status {
+    padding: 0.3rem;
+    border-radius: var(--status-radius);
+    background-color: var(--status-bg);
+}
+
+#status span {
+    font-size: .875rem;
+}
+
+#profile {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#profile .name {
+    border-radius: $profile-radius;
+    padding: 2px;
+    background-color: $profile-bg;
+}
+
+#links {
+    width: 80%;
+    margin: 8px auto;
+    background-color: $links-bg;
+    border-radius: $links-radius;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-flow: row;
+    gap: 1rem;
+}
+
+#linksTitle {
+    color: $links-title-color;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+}
+
+#icp {
+    text-align: center;
+}
+
+#icp a {
+    text-decoration-line: none;
+}
+
+#icp a span {
+    color: var(--text-color);
+}
+
+
+// sm比例下的样式
+@media screen and (min-width: $sm) {
+    #main-container {
+        width: 100%;
+    }
+}
+
+// md比例下的样式
+@media screen and (min-width: $md) {
+    body {
+        margin-top: calc(1rem + 2vh);
+    }
+    header {
+        margin-top: 7rem;
+    }
+    main {
+        width: $md * 0.8;
+    }
+}
+
+// lg比例下的样式
+@media screen and (min-width:$lg) {
+    header {
+        margin-top: 8rem;
+    }
+    main {
+        width: $lg * 0.8;
+    }
+}
+
+// xl比例下的样式
+@media screen and (min-width: $xl) {
+    header {
+        margin-top: 9rem;
+    }
+    main {
+        width: $xl * 0.8;
+    }
+}
+
+

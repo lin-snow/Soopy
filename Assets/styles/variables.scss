@@ -1,0 +1,46 @@
+
+:root {
+    --body-width: 100%;
+    --body-height: 100vh;
+    --bg-color: #ffffff;
+    --text-color: #333;
+    
+
+    --container-max-width: 768px;
+    --container-height: auto;
+
+    --status-bg: #fff8ec;
+    --status-radius: 10px;
+}
+
+// 定义响应式断点
+$sm: 375px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+// avatar 大小
+$avatar-size: 6rem;
+
+// avatar 圆角弧度
+$avatar-radius: 100%;
+
+// avatar 样式
+$avatar-bg: #e0e0e0;
+$avatar-shadow: 5px 5px 26px #c3c3c3,
+                -5px -5px 26px #fdfdfd;
+
+// profile 样式
+$profile-bg: #fff3df;
+$profile-radius: 6px;                
+
+// links 样式
+$links-bg: #fffbf3;
+$links-radius: 6px;
+
+// links标题颜色
+$links-title-color: #9b4900;
+
+
+
+
