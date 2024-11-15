@@ -12,8 +12,7 @@ body {
 
 // 设置header
 header {
-    margin-top: 8rem;
-
+    margin-top: 4rem;
 }
 
 // 设置主要容器
@@ -22,9 +21,6 @@ main {
     max-width: var(--container-max-width);
     height: var(--container-height);
     margin: 1rem auto;
-    // background-color: rgba(0, 0, 0, 0.1);
-    // position: relative;
-    // top: calc(100vh * 0.2); 
 }
 
 .Author {
