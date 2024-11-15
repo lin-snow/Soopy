@@ -1,5 +1,8 @@
-# Summary
-This is a fronted-end project using for homepage.
+# Soopy
 
-# Status
-On Developing...
+This is a `Simple & Lightweight` homepage.
+
+![](./screenshot/2.png)
+
+Demo: https://lin-snow.github.io/Soopy
+
