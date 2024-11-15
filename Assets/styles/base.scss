@@ -159,7 +159,6 @@ main {
 }
 
 #fun .innerfun {
-    display: block;
     width: 80%;
     height: 80%;
     background-color: $fun-inner-bg;
@@ -167,13 +166,14 @@ main {
     border: 1px solid #f5f4e1;
     margin: 5px auto;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .innerfun img {
     width: 1.3rem;
     height: 1.3rem;
-    position: relative;
-    top: 3px;
 }
 
 
