@@ -48,6 +48,18 @@ main {
   box-shadow: 5px 5px 26px #c3c3c3, -5px -5px 26px #fdfdfd;
 }
 
+#avatar img:hover {
+  animation: rotate 1.5s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 #avatar-weight {
   position: relative;
   left: 10px;
