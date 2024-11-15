@@ -30,17 +30,22 @@ $avatar-bg: #e0e0e0;
 $avatar-shadow: 5px 5px 26px #c3c3c3,
                 -5px -5px 26px #fdfdfd;
 
+// mail 样式
+$mail-bg: #fffbf5;
+$mail-inner-bg: rgb(251 250 189 / 20%);
+$mail-text-color: #7d7d7d;
+$mail-shadow: 0px 0px 8px -5px rgba(0, 0, 0, 0.31);
+
 // profile 样式
 $profile-bg: #fff3df;
 $profile-radius: 6px;                
 
-// links 样式
-$links-bg: #fffbf3;
-$links-radius: 6px;
-
 // links标题颜色
 $links-title-color: #9b4900;
 
+// projects标题颜色
+$projects-title-color: #9b4900;
 
-
-
+// projects 样式
+$project-span-color: #868686;
+$project-item-color: #b19d8b;

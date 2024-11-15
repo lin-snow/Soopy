@@ -17,7 +17,7 @@ body {
 }
 
 header {
-  margin-top: 6rem;
+  margin-top: 8rem;
 }
 
 main {
@@ -63,7 +63,8 @@ main {
 }
 
 #status {
-  padding: 0.3rem;
+  width: 8rem;
+  padding: 2px 4px;
   border-radius: var(--status-radius);
   background-color: var(--status-bg);
 }
@@ -79,31 +80,134 @@ main {
 
 #profile .name {
   border-radius: 6px;
-  padding: 2px;
-  background-color: #fff3df;
+  padding: 1px 3px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+#mail {
+  margin-left: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 10rem;
+  height: 2.2rem;
+  padding: 4px 0px;
+  border-radius: 6rem;
+  background-color: #fffbf5;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 0px 8px -5px rgba(0, 0, 0, 0.31);
+}
+
+.innermail {
+  display: flex;
+  justify-content: center;
+  width: 92%;
+  height: 90%;
+  margin: 2px auto;
+  background-color: rgba(251, 250, 189, 0.2);
+  border-radius: 5rem;
+  border: 1px solid #f5f4e1;
+}
+
+#mail img {
+  width: 1.3rem;
+  height: 1.3rem;
+  position: relative;
+  top: 7px;
+  left: -8px;
+  color: #7d7d7d;
+}
+
+#mail a {
+  position: relative;
+  top: 6px;
+  text-decoration-line: none;
+  text-align: center;
+  color: #7d7d7d;
 }
 
 #links {
-  width: 80%;
-  margin: 8px auto;
-  background-color: #fffbf3;
-  border-radius: 6px;
-  padding: 15px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-flow: row;
-  gap: 1rem;
+  margin: 1.2rem 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
 }
 
 #linksTitle {
   color: #9b4900;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 500;
+  -webkit-text-decoration: wavy underline;
+          text-decoration: wavy underline;
+}
+
+#links a {
+  margin-right: 1rem;
+  color: #9b4900;
+}
+
+#links a img {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 1rem 0;
+}
+
+.projectItem span {
+  color: #868686;
+}
+
+.projectItem a {
+  color: #b19d8b;
+  text-decoration: underline;
+}
+
+.projectItem a:hover {
+  color: #9b4900;
+  text-decoration: underline;
+}
+
+#projectsTitle {
+  color: #9b4900;
+  font-size: 1rem;
+  font-weight: 500;
+  -webkit-text-decoration: wavy underline;
+          text-decoration: wavy underline;
+}
+
+#copyright {
+  margin-top: 4.5rem;
+}
+
+#copyright span {
+  font-size: 0.875rem;
+  color: var(--text-color);
+}
+
+#made {
+  font-size: 0.675rem;
+}
+
+#made span {
+  color: var(--text-color);
+}
+
+#made a {
+  color: var(--text-color);
+  text-decoration-line: none;
 }
 
 footer {
   width: 100%;
   height: auto;
+  position: relative;
+  top: 40vh;
 }
 
 #icp {
