@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="./Assets/styles/base.css">
     
     <!-- Scripts -->
-    <script src="./Assets/scripts/base.js"></script>
+    <script type="text/javascript" src="./Assets/scripts/base.js"></script>
     
     <!-- Fonts -->
     <link rel="stylesheet" href="./Assets/font/result.css">
@@ -48,15 +48,26 @@
         </div>
         <!-- profile -->
         <div id="profile">
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;这里是 <span class="name">Soopy~</span>  的主页! 请通过邮箱联系我吧.</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;这里是 <span class="name">Soopy~</span>  的主页!</p>
         </div>
-        <!-- mail -->
-        <div id="mail">
-            <div class="innermail">
-                <img src="./Assets/icons/mail.svg" alt="Mail">
-                <a href="mailto:hi@soopy.cn">hi@soopy.cn</a>
+
+        <!-- buttons -->
+        <div id="mybuttons">
+                <!-- mail -->
+            <div id="mail">
+                <div class="innermail">
+                    <img src="./Assets/icons/mail.svg" alt="Mail">
+                    <a href="mailto:hi@soopy.cn">hi@soopy.cn</a>
+                </div>
+            </div>
+            <!-- function button -->
+            <div id="fun">
+                <button class="innerfun" type="button">
+                    <img src="./Assets/icons/upside-down-face.svg" alt="fun">
+                </button>
             </div>
         </div>
+
         <!-- links -->
         <span id="linksTitle">#Links</span>
         <div id="links">
@@ -80,6 +91,16 @@
                     <img src="./Assets/icons/server.svg" alt="Status">
                 </a>
             </div>
+            <div class="item">
+                <a href="https://x.com/l1n_sn0w">
+                    <img src="./Assets/icons/twitter.svg" alt="X">
+                </a>
+            </div>
+            <div class="item">
+                <a href="https://www.instagram.com/l1nsn0w/">
+                    <img src="./Assets/icons/instagram.svg" alt="Instagram">
+                </a>
+            </div>
         </div>
         <!-- Projects -->
         <span id="projectsTitle">#ProJects</span>
@@ -94,7 +115,23 @@
             <div class="projectItem">
                 <span>「 <a href="https://github.com/lin-snow/DOOO">Dooo</a> 」: A TODO Web.</span>
             </div>
+            <div class="projectItem">
+                <span>「 <a href="https://github.com/lin-snow/hackintosh-m73-tiny">M73-Tiny</a> 」: Hackintosh EFI.</span>
+            </div>
         </div>
+
+        <!-- Resume -->
+        <div id="resume" class="hidden">
+            <img src="./Assets/resume/b22.gif" alt="b22">
+            <h2>👨‍💻 More About Me</h2>
+            <p>
+            👋 Hi! I'm Soopy. <br>
+            🎓 I'm a student at GDUT. <br>
+            🌈 I'm currently learning SE. <br>
+            🤪 ... <br>
+            </p>
+        </div>
+
         <!-- Copyright -->
         <div id="copyright">
             <span>© 2024 Soopy.</span>
@@ -103,7 +140,7 @@
         <div id="made">
             <span>Made with ❤️ by <a href="https://soopy.cn">Soopy~</a>.</span>
         </div>
-    </main>  
+    </main>
     <footer>
         
         <!-- ICP -->

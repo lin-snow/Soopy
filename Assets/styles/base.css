@@ -14,6 +14,11 @@ body {
   margin-top: 0;
   font-family: "LXGW WenKai Screen";
   color: var(--text-color);
+  overflow-y: scroll;
+}
+
+.hidden {
+  display: none !important;
 }
 
 header {
@@ -32,18 +37,18 @@ main {
 }
 
 #avatar {
-  width: 6rem;
-  height: 6rem;
+  width: 5.5rem;
+  height: 5.5rem;
   border: 1px solid #ccc;
   border-radius: 100%;
   overflow: hidden;
   position: relative;
-  top: 1px;
+  top: 8px;
 }
 
 #avatar img {
-  width: 6rem;
-  height: 6rem;
+  width: 5.5rem;
+  height: 5.5rem;
   background: #e0e0e0;
   box-shadow: 5px 5px 26px #c3c3c3, -5px -5px 26px #fdfdfd;
 }
@@ -97,10 +102,15 @@ main {
   font-weight: bold;
 }
 
+#mybuttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 2rem 0;
+  width: auto;
+}
+
 #mail {
-  margin-left: 1rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
   width: 10rem;
   height: 2.2rem;
   padding: 4px 0px;
@@ -116,7 +126,7 @@ main {
   justify-content: center;
   width: 92%;
   height: 90%;
-  margin: 2px auto;
+  margin: 1px auto;
   background-color: rgba(251, 250, 189, 0.2);
   border-radius: 5rem;
   border: 1px solid #f5f4e1;
@@ -139,11 +149,40 @@ main {
   color: #7d7d7d;
 }
 
+#fun {
+  width: 2.3rem;
+  height: 2.3rem;
+  background-color: #fffbf5;
+  border-radius: 100%;
+  position: relative;
+  left: 7px;
+  padding: 3px 3px;
+}
+
+#fun .innerfun {
+  display: block;
+  width: 80%;
+  height: 80%;
+  background-color: rgba(255, 253, 229, 0.79);
+  border-radius: 100%;
+  border: 1px solid #f5f4e1;
+  margin: 5px auto;
+  cursor: pointer;
+}
+
+.innerfun img {
+  width: 1.3rem;
+  height: 1.3rem;
+  position: relative;
+  top: 3px;
+}
+
 #links {
   margin: 1.2rem 0;
   display: flex;
   justify-content: flex-start;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 #linksTitle {
@@ -193,6 +232,18 @@ main {
           text-decoration: wavy underline;
 }
 
+#resume {
+  height: auto;
+}
+
+#resume img {
+  width: 15rem;
+  border-radius: 8px;
+  position: relative;
+  display: block;
+  box-shadow: 1px 3px 17px -4px rgba(28, 17, 8, 0.31);
+}
+
 #copyright {
   margin-top: 4.5rem;
 }
@@ -238,6 +289,9 @@ footer {
   #main-container {
     width: 100%;
   }
+  #resume img {
+    margin: 0 auto;
+  }
 }
 @media screen and (min-width: 768px) {
   body {
@@ -248,6 +302,9 @@ footer {
   }
   main {
     width: 614.4px;
+  }
+  #resume img {
+    margin: 0 0;
   }
 }
 @media screen and (min-width: 992px) {

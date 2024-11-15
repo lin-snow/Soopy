@@ -20,7 +20,7 @@ $lg: 992px;
 $xl: 1200px;
 
 // avatar 大小
-$avatar-size: 6rem;
+$avatar-size: 5.5rem;
 
 // avatar 圆角弧度
 $avatar-radius: 100%;
@@ -36,6 +36,12 @@ $mail-inner-bg: rgb(251 250 189 / 20%);
 $mail-text-color: #7d7d7d;
 $mail-shadow: 0px 0px 8px -5px rgba(0, 0, 0, 0.31);
 
+// fun 样式
+$fun-bg: #fffbf5;
+$fun-inner-bg: rgb(255 253 229 / 79%);
+$fun-text-color: #7d7d7d;
+$fun-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.31);
+
 // profile 样式
 $profile-bg: #fff3df;
 $profile-radius: 6px;                
@@ -49,3 +55,6 @@ $projects-title-color: #9b4900;
 // projects 样式
 $project-span-color: #868686;
 $project-item-color: #b19d8b;
+
+// resume 样式
+$resume-shadow: 1px 3px 17px -4px rgb(28 17 8 / 31%);

@@ -8,6 +8,11 @@ body {
 
     font-family: 'LXGW WenKai Screen';
     color: var(--text-color);
+    overflow-y: scroll;
+}
+
+.hidden {
+    display: none !important;
 }
 
 // 设置header
@@ -36,12 +41,12 @@ main {
     overflow: hidden;
     // 调整头像位置
     position: relative;
-    top: 1px;    
+    top: 8px;    
 }
 
 #avatar img {
-    width: 6rem;
-    height: 6rem;
+    width: $avatar-size;
+    height: $avatar-size;
     background: $avatar-bg;
     box-shadow:  $avatar-shadow;
 }
@@ -96,10 +101,15 @@ main {
     font-weight: bold;
 }
 
+#mybuttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 2rem 0;
+    width: auto;
+}
+
 #mail {
-    margin-left: 1rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
     width: 10rem;
     height: 2.2rem;
     padding: 4px 0px;
@@ -115,7 +125,7 @@ main {
     justify-content: center;
     width: 92%;
     height: 90%;
-    margin: 2px auto;
+    margin: 1px auto;
     background-color: $mail-inner-bg;
     border-radius: 5rem;
     border: 1px solid #f5f4e1;
@@ -138,11 +148,41 @@ main {
     color: $mail-text-color;
 }
 
+#fun {
+    width: 2.3rem;
+    height: 2.3rem;
+    background-color: $fun-bg;
+    border-radius: 100%;
+    position: relative;
+    left: 7px;
+    padding: 3px 3px;
+}
+
+#fun .innerfun {
+    display: block;
+    width: 80%;
+    height: 80%;
+    background-color: $fun-inner-bg;
+    border-radius: 100%;
+    border: 1px solid #f5f4e1;
+    margin: 5px auto;
+    cursor: pointer;
+}
+
+.innerfun img {
+    width: 1.3rem;
+    height: 1.3rem;
+    position: relative;
+    top: 3px;
+}
+
+
 #links {
     margin: 1.2rem 0;
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 #linksTitle {
@@ -188,6 +228,18 @@ main {
     font-size: 1rem;
     font-weight: 500;
     text-decoration: wavy underline;
+}
+
+#resume {
+    height: auto;
+}
+
+#resume img {
+    width: 15rem;
+    border-radius: 8px;
+    position: relative;
+    display: block;
+    box-shadow: $resume-shadow;
 }
 
 #copyright {
@@ -237,6 +289,9 @@ footer {
     #main-container {
         width: 100%;
     }
+    #resume img {
+        margin: 0 auto;
+    }
 }
 
 // md比例下的样式
@@ -249,6 +304,9 @@ footer {
     }
     main {
         width: $md * 0.8;
+    }
+    #resume img {
+        margin: 0 0;
     }
 }
 
