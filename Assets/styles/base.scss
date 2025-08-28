@@ -1,0 +1,334 @@
+// 引入全局变量
+@import 'variables';
+
+// 设置全局样式
+body {
+    background-color: var(--bg-color);
+    margin-top: 0;
+
+    font-family: 'LXGW WenKai Screen';
+    color: var(--text-color);
+    overflow-y: scroll;
+}
+
+.hidden {
+    display: none !important;
+}
+
+// 设置header
+header {
+    margin-top: 4rem;
+}
+
+// 设置主要容器
+main {
+    display: block;
+    max-width: var(--container-max-width);
+    height: var(--container-height);
+    margin: 1rem auto;
+}
+
+.Author {
+    display: flex;
+}
+
+// 头像
+#avatar {
+    width: $avatar-size;
+    height: $avatar-size;
+    border: 1px solid #ccc;
+    border-radius: $avatar-radius;
+    overflow: hidden;
+    // 调整头像位置
+    position: relative;
+    top: 8px;    
+}
+
+#avatar img {
+    width: $avatar-size;
+    height: $avatar-size;
+    background: $avatar-bg;
+    box-shadow:  $avatar-shadow;
+}
+
+#avatar img:hover {
+    animation: rotate 1.5s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#avatar-weight {
+    position: relative;
+    left: 10px;
+}
+
+#greeting p {
+    margin-top: 25px;
+    margin-bottom: 14px;
+    position: relative;
+    top: 5px;
+    font-size: 1.875rem;
+    font-weight: 700;
+}
+
+#status {
+    width: 8rem;
+    padding: 2px 4px;
+    border-radius: var(--status-radius);
+    background-color: var(--status-bg);
+}
+
+#status span {
+    font-size: .875rem;
+}
+
+#profile {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#profile .name {
+    border-radius: $profile-radius;
+    padding: 1px 3px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#mybuttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 2rem 0;
+    width: auto;
+}
+
+#mail {
+    width: 10rem;
+    height: 2.2rem;
+    padding: 4px 0px;
+    border-radius: 6rem;
+    background-color: $mail-bg;
+    display: flex;
+    justify-content: center;
+    box-shadow: $mail-shadow;
+}
+
+.innermail {
+    display: flex;
+    justify-content: center;
+    width: 92%;
+    height: 90%;
+    margin: 1px auto;
+    background-color: $mail-inner-bg;
+    border-radius: 5rem;
+    border: 1px solid #f5f4e1;
+}
+
+#mail img {
+    width: 1.3rem;
+    height: 1.3rem;
+    position: relative;
+    top: 7px;
+    left: -8px;
+    color: $mail-text-color;
+}
+
+#mail a {
+    position: relative;
+    top: 6px;
+    text-decoration-line: none;
+    text-align: center;
+    color: $mail-text-color;
+}
+
+#fun {
+    width: 2.3rem;
+    height: 2.3rem;
+    background-color: $fun-bg;
+    border-radius: 100%;
+    position: relative;
+    left: 7px;
+    padding: 3px 3px;
+}
+
+#fun .innerfun {
+    width: 80%;
+    height: 80%;
+    background-color: $fun-inner-bg;
+    border-radius: 100%;
+    border: 1px solid #f5f4e1;
+    margin: 5px auto;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.innerfun img {
+    width: 1.3rem;
+    height: 1.3rem;
+}
+
+
+#links {
+    margin: 1.2rem 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#linksTitle {
+    color: $links-title-color;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: wavy underline;
+}
+
+#links a {
+    margin-right: 1rem;
+    color: $links-title-color;
+}
+
+#links a img {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 1rem 0;
+}
+
+.projectItem span {
+    color: $project-span-color;
+}
+
+.projectItem a {
+    color: $project-item-color;
+    text-decoration: underline;
+}
+
+.projectItem a:hover {
+    color: $links-title-color;
+    text-decoration: underline;
+}
+
+#projectsTitle {
+    color: $projects-title-color;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: wavy underline;
+}
+
+#resume {
+    height: auto;
+}
+
+#resume img {
+    width: 15rem;
+    border-radius: 8px;
+    position: relative;
+    display: block;
+    box-shadow: $resume-shadow;
+}
+
+#copyright {
+    margin-top: 4.5rem;
+}
+
+#copyright span {
+    font-size: .875rem;
+    color: var(--text-color);
+}
+
+#made {
+    font-size: .675rem;
+}
+
+#made span {
+    color: var(--text-color);
+}
+
+#made a {
+    color: var(--text-color);
+    text-decoration-line: none;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: calc(40vh);
+}
+
+#icp {
+    text-align: left;
+}
+
+#icp a {
+    text-decoration-line: none;
+}
+
+#icp a span {
+    font-size: .675rem;
+    color: var(--text-color);
+}
+
+
+// sm比例下的样式
+@media screen and (min-width: $sm) {
+    #main-container {
+        width: 100%;
+    }
+    #resume img {
+        margin: 0 auto;
+    }
+}
+
+// md比例下的样式
+@media screen and (min-width: $md) {
+    body {
+        margin-top: calc(1rem + 2vh);
+    }
+    header {
+        margin-top: 7rem;
+    }
+    main {
+        width: $md * 0.8;
+    }
+    #resume img {
+        margin: 0 0;
+    }
+}
+
+// lg比例下的样式
+@media screen and (min-width:$lg) {
+    header {
+        margin-top: 8rem;
+    }
+    main {
+        width: $lg * 0.8;
+    }
+}
+
+// xl比例下的样式
+@media screen and (min-width: $xl) {
+    header {
+        margin-top: 9rem;
+    }
+    main {
+        width: $xl * 0.8;
+    }
+}
+
+

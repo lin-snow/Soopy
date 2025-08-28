@@ -1,0 +1,326 @@
+:root {
+  --body-width: 100%;
+  --body-height: 100vh;
+  --bg-color: #ffffff;
+  --text-color: #333;
+  --container-max-width: 768px;
+  --container-height: auto;
+  --status-bg: #fff8ec;
+  --status-radius: 10px;
+}
+
+body {
+  background-color: var(--bg-color);
+  margin-top: 0;
+  font-family: "LXGW WenKai Screen";
+  color: var(--text-color);
+  overflow-y: scroll;
+}
+
+.hidden {
+  display: none !important;
+}
+
+header {
+  margin-top: 4rem;
+}
+
+main {
+  display: block;
+  max-width: var(--container-max-width);
+  height: var(--container-height);
+  margin: 1rem auto;
+}
+
+.Author {
+  display: flex;
+}
+
+#avatar {
+  width: 5.5rem;
+  height: 5.5rem;
+  border: 1px solid #ccc;
+  border-radius: 100%;
+  overflow: hidden;
+  position: relative;
+  top: 8px;
+}
+
+#avatar img {
+  width: 5.5rem;
+  height: 5.5rem;
+  background: #e0e0e0;
+  box-shadow: 5px 5px 26px #c3c3c3, -5px -5px 26px #fdfdfd;
+}
+
+#avatar img:hover {
+  animation: rotate 1.5s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#avatar-weight {
+  position: relative;
+  left: 10px;
+}
+
+#greeting p {
+  margin-top: 25px;
+  margin-bottom: 14px;
+  position: relative;
+  top: 5px;
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+
+#status {
+  width: 8rem;
+  padding: 2px 4px;
+  border-radius: var(--status-radius);
+  background-color: var(--status-bg);
+}
+
+#status span {
+  font-size: 0.875rem;
+}
+
+#profile {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#profile .name {
+  border-radius: 6px;
+  padding: 1px 3px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+#mybuttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 2rem 0;
+  width: auto;
+}
+
+#mail {
+  width: 10rem;
+  height: 2.2rem;
+  padding: 4px 0px;
+  border-radius: 6rem;
+  background-color: #fffbf5;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 0px 8px -5px rgba(0, 0, 0, 0.31);
+}
+
+.innermail {
+  display: flex;
+  justify-content: center;
+  width: 92%;
+  height: 90%;
+  margin: 1px auto;
+  background-color: rgba(251, 250, 189, 0.2);
+  border-radius: 5rem;
+  border: 1px solid #f5f4e1;
+}
+
+#mail img {
+  width: 1.3rem;
+  height: 1.3rem;
+  position: relative;
+  top: 7px;
+  left: -8px;
+  color: #7d7d7d;
+}
+
+#mail a {
+  position: relative;
+  top: 6px;
+  text-decoration-line: none;
+  text-align: center;
+  color: #7d7d7d;
+}
+
+#fun {
+  width: 2.3rem;
+  height: 2.3rem;
+  background-color: #fffbf5;
+  border-radius: 100%;
+  position: relative;
+  left: 7px;
+  padding: 3px 3px;
+}
+
+#fun .innerfun {
+  width: 80%;
+  height: 80%;
+  background-color: rgba(255, 253, 229, 0.79);
+  border-radius: 100%;
+  border: 1px solid #f5f4e1;
+  margin: 5px auto;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.innerfun img {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+#links {
+  margin: 1.2rem 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#linksTitle {
+  color: #9b4900;
+  font-size: 1rem;
+  font-weight: 500;
+  -webkit-text-decoration: wavy underline;
+          text-decoration: wavy underline;
+}
+
+#links a {
+  margin-right: 1rem;
+  color: #9b4900;
+}
+
+#links a img {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 1rem 0;
+}
+
+.projectItem span {
+  color: #868686;
+}
+
+.projectItem a {
+  color: #b19d8b;
+  text-decoration: underline;
+}
+
+.projectItem a:hover {
+  color: #9b4900;
+  text-decoration: underline;
+}
+
+#projectsTitle {
+  color: #9b4900;
+  font-size: 1rem;
+  font-weight: 500;
+  -webkit-text-decoration: wavy underline;
+          text-decoration: wavy underline;
+}
+
+#resume {
+  height: auto;
+}
+
+#resume img {
+  width: 15rem;
+  border-radius: 8px;
+  position: relative;
+  display: block;
+  box-shadow: 1px 3px 17px -4px rgba(28, 17, 8, 0.31);
+}
+
+#copyright {
+  margin-top: 4.5rem;
+}
+
+#copyright span {
+  font-size: 0.875rem;
+  color: var(--text-color);
+}
+
+#made {
+  font-size: 0.675rem;
+}
+
+#made span {
+  color: var(--text-color);
+}
+
+#made a {
+  color: var(--text-color);
+  text-decoration-line: none;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: 40vh;
+}
+
+#icp {
+  text-align: left;
+}
+
+#icp a {
+  text-decoration-line: none;
+}
+
+#icp a span {
+  font-size: 0.675rem;
+  color: var(--text-color);
+}
+
+@media screen and (min-width: 375px) {
+  #main-container {
+    width: 100%;
+  }
+  #resume img {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  body {
+    margin-top: calc(1rem + 2vh);
+  }
+  header {
+    margin-top: 7rem;
+  }
+  main {
+    width: 614.4px;
+  }
+  #resume img {
+    margin: 0 0;
+  }
+}
+@media screen and (min-width: 992px) {
+  header {
+    margin-top: 8rem;
+  }
+  main {
+    width: 793.6px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  header {
+    margin-top: 9rem;
+  }
+  main {
+    width: 960px;
+  }
+}/*# sourceMappingURL=base.css.map */

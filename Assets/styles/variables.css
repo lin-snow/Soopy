@@ -1,0 +1,10 @@
+:root {
+  --body-width: 100%;
+  --body-height: 100vh;
+  --bg-color: #ffffff;
+  --text-color: #333;
+  --container-max-width: 768px;
+  --container-height: auto;
+  --status-bg: #fff8ec;
+  --status-radius: 10px;
+}/*# sourceMappingURL=variables.css.map */
