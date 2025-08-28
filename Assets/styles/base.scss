@@ -6,7 +6,7 @@ body {
     background-color: var(--bg-color);
     margin-top: 0;
 
-    font-family: 'LXGW WenKai Screen';
+    font-family: var(--font-sans);
     color: var(--text-color);
     overflow-y: scroll;
 }
@@ -83,6 +83,8 @@ main {
     padding: 2px 4px;
     border-radius: var(--status-radius);
     background-color: var(--status-bg);
+    text-align: center;
+    align-items: center;
 }
 
 #status span {
@@ -110,13 +112,14 @@ main {
 }
 
 #mail {
-    width: 10rem;
+    width: 12rem;
     height: 2.2rem;
     padding: 4px 0px;
     border-radius: 6rem;
     background-color: $mail-bg;
     display: flex;
     justify-content: center;
+    align-items: center;
     box-shadow: $mail-shadow;
 }
 
@@ -129,6 +132,7 @@ main {
     background-color: $mail-inner-bg;
     border-radius: 5rem;
     border: 1px solid #f5f4e1;
+    padding: 1px;
 }
 
 #mail img {
